@@ -10,7 +10,6 @@ done
 
 echo "✅ Postgres Database Started Successfully (db:5432)"
 
-git remote set-url origin https://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@github.com/freitasanderson/marketcashier.git
 git pull
 
 python manage.py collectstatic --noinput
