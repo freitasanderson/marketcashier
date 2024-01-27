@@ -9,8 +9,9 @@ while ! nc -z db 5432; do
 done
 
 echo "✅ Postgres Database Started Successfully (db:5432)"
+git checkout .
 
-git pull
+git pull origin main --force
 
 python manage.py collectstatic --noinput
 python manage.py makemigrations --noinput
