@@ -3,9 +3,9 @@
 # O shell irá encerrar a execução do script quando um comando falhar
 set -e
 
-# git checkout .
+git checkout .
 
-# git pull origin main --force
+git pull origin main --force
 
 python manage.py collectstatic --noinput
 python manage.py makemigrations --noinput
