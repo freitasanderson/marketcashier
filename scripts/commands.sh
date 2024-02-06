@@ -3,8 +3,6 @@
 # O shell irá encerrar a execução do script quando um comando falhar
 set -e
 
-git checkout .
-
 git pull origin main --force
 
 python manage.py collectstatic --noinput
